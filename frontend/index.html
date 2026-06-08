@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+    <h1>Product Management System</h1>
+
+    <p>
+        Manage products efficiently using
+        Spring Boot & MySQL
+    </p>
+
+</div>
+
+    <form id="productForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Product Name"
+            required>
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Description"
+            required>
+
+        <input
+            type="text"
+            id="category"
+            placeholder="Category"
+            required>
+
+        <input
+            type="number"
+            id="price"
+            placeholder="Price"
+            required>
+
+        <button type="submit">
+            Add Product
+        </button>
+
+    </form>
+
+    <input
+    type="text"
+    id="search"
+    placeholder="Search Product..."
+>
+
+    <table>
+
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody id="productTable"></tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
